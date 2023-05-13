@@ -1,8 +1,14 @@
 const container = document.querySelector('#container');
 const row_cube = document.getElementsByClassName("row");
 const column_cube = document.getElementsByClassName("column");
+const user_num = document.querySelector('#user_num');
+
+//funcitons:
 
 function makeGrid() {
+
+    container.innerHTML = ''; //clears any previous grid configuration
+
     for(let i = 0; i < num; i++){
         const row = document.createElement('div');
         row.classList.add('row');
@@ -29,10 +35,23 @@ function draw() {
         }
     });
    });
-   }
+   };
 
+   //Getting the user-submitted grid size (if requested)
 
-let num = 16;
+  let num = 16;
 
-makeGrid();
-draw();
+  document.querySelector('form').addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const submitted_num = parseInt(user_num.value);
+        if (!isNaN(submitted_num) && submitted_num >= 2 && submitted_num <= 99) {
+            num = submitted_num;
+        };
+        makeGrid();
+        draw();
+     
+  });
+
+   makeGrid();
+   draw();
