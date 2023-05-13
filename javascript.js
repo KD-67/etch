@@ -30,8 +30,14 @@ function draw() {
     column.addEventListener('mouseover', () => {
         if (draw_black.checked) {
             column.style.backgroundColor = 'black';
+        } else if (draw_red.checked){
+            column.style.backgroundColor = 'red';
+        } else if (draw_blue.checked) {
+            column.style.backgroundColor = 'blue';
+        } else if (draw_yellow.checked) {
+            column.style.backgroundColor = 'yellow';
         } else if (draw_white.checked) {
-            column.style.backgroundColor = 'white';
+            column.style.backgroundColor = 'rgb(238, 235, 235)';
         }
     });
    });

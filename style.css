@@ -1,18 +1,83 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px
+}
+
+form {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 #container {
 display: flex;
-border: 1px solid black;
 width: 700px;
 height: 700px;
+border: 3px solid black;
 }
 
 .row {
 display: flex;
 flex-direction: column;
-border: thin solid black;
+border: 1px solid white;
 flex: 1;
+background-color: rgb(238, 235, 235);
 }
 
 .column {
-border: thin solid black;
+border: 1px solid white;
 flex: 1;
+}
+
+#pen_box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pen_label {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.pen {
+    border: 1px solid black;
+}
+
+#black_pen {
+    background-color: rgb(150, 147, 147);
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+#red_pen {
+    background-color: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#blue_pen {
+    background-color: blue;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#yellow_pen {
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#white_pen {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#canvas {
+    display: flex;
+    justify-content: center;
 }

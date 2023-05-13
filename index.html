@@ -20,24 +20,47 @@
             <br>
             <div>
                 <input type="submit">
-            </div>
-            <p>(number must be between 2 and 99)</p>
-        </div>
+           </div>
         <br>
         <div>
-            <label for="draw_color">Choose pen color:</label>
-
-            <label for="draw_black">Black</label>
-            <input type="radio" id="draw_black" name="draw_color" value="black">
-
-            <label for="draw_white">White</label>
-            <input type="radio" id="draw_white" name="draw_color" value="white">
+            <div id="pen_label"> 
+                <label for="draw_color">Choose pen color:</label>
+            </div>
+           <div id="pen_box">
+                <div class="pen" id="black_pen">
+                    <label for="draw_black">Black:</label>
+                    <input type="radio" id="draw_black" name="draw_color" value="black">
+                </div>
+                
+                <div class="pen" id="red_pen">
+                    <label for="draw_red">Red:</label>
+                    <input type="radio" id="draw_red" name="draw_color" value="red">
+                </div>
+                
+                <div class="pen" id="blue_pen">
+                    <label for="draw_blue">Blue:</label>
+                    <input type="radio" id="draw_blue" name="draw_color" value="blue">
+                </div>
+                
+                <div class="pen" id="yellow_pen">
+                    <label for="draw_yellow">Yellow:</label>
+                    <input type="radio" id="draw_yellow" name="draw_color" value="yellow">
+                </div>
+                
+                <div class="pen" id="white_pen">
+                    <label for="draw_white">Eraser:</label>
+                    <input type="radio" id="draw_white" name="draw_color" value="white">
+                </div>
+                
+            </div>
         </div>
 
     </form>
         <br>
-    <div id="container">
+    <div id="canvas">
+        <div id="container">
 
+        </div>
     </div>
     
 </body>
