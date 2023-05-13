@@ -12,6 +12,30 @@
     <h1>
         ETCH-A-SKETCH
     </h1>
+
+    <form>
+        <div>
+            <label for="num">Enter grid size: <label>
+            <input type="number" id="num" name="num" placeholder="16" min="2" max="99"> 
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+            <p>(number must be between 2 and 99)</p>
+        </div>
+        <br>
+        <div>
+            <label for="draw_color">Choose pen color:</label>
+
+            <label for="draw_black">Black</label>
+            <input type="radio" id="draw_black" name="draw_color" value="black">
+
+            <label for="draw_white">White</label>
+            <input type="radio" id="draw_white" name="draw_color" value="white">
+        </div>
+
+    </form>
+        <br>
     <div id="container">
 
     </div>

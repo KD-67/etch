@@ -8,11 +8,11 @@ height: 500px;
 .row {
 display: flex;
 flex-direction: column;
-border: 1px solid black;
+border: thin solid black;
 flex: 1;
 }
 
 .column {
-border: 1px solid black;
+border: thin solid black;
 flex: 1;
 }
