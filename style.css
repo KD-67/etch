@@ -1,0 +1,18 @@
+#container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 15px solid rgb(150, 142, 142);
+    border-radius: 14px;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    border: 1px solid rgb(243, 239, 239);
+    flex: 1;
+}
